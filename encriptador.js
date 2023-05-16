@@ -39,17 +39,14 @@ function requisitos(e) {
     }
 }
 
+//funcion copiar
+function copiar(){
 
-const btn = document.getElementById("button-copy");
-const origin = document.getElementById("text");
-const parrafo = document.getElementById("parrafo")
+    let card = document.getElementById("parrafo").innerHTML
+    navigator.clipboard.writeText(card)
+    document.getElementById("text").value = "";
 
-btn.addEventListener("click", () => {
-    const texto = origin.value;
-    console.log(texto);
-    parrafo.innerHTML.select = texto;
-    alert("Texto copiado");
-})
+}
 
 
 function toggleClass(){
