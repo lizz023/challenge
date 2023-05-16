@@ -77,7 +77,7 @@ function desencriptar(){
         parrafo.textContent = textoDesencriptado;
         busqueda.src = "";
     }else{
-        busqueda.src = "./img/muñeco.png";
+        busqueda.src = "./img/busqueda.png";
         titulo.textContent = "Ningún mensaje fue encontrado"
         parrafo.textContent= "Ingresa el texto que deseas encriptar o desencriptar"
         alert("Debes ingresar un texto");
