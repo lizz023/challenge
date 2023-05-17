@@ -1,7 +1,5 @@
 
 function encriptar() {
-    console.log("EJECUTANDO ENCRIPTAR");
-
     let texto    = document.getElementById("text").value;
     let titulo   = document.getElementById("titulo-text2");
     let parrafo  = document.getElementById("parrafo");
@@ -20,8 +18,6 @@ function encriptar() {
         parrafo.textContent = textoEncriptado;
         busqueda.src = "";
         toggleClass();
-        
-        
     }else{
         busqueda.src = "./img/busqueda.png";
         titulo.textContent = "Ningún mensaje fue encontrado"
@@ -41,17 +37,17 @@ function requisitos(e) {
 
 //funcion copiar
 function copiar(){
-
     let card = document.getElementById("parrafo").innerHTML
     navigator.clipboard.writeText(card)
     document.getElementById("text").value = "";
-
 }
 
-
 function toggleClass(){
-    let button = document.getElementById("copy");
-    button.classList.toggle("display-none");
+    const box2 = document.getElementById("box2");
+    box2.classList.toggle("display-none");
+
+    let box1 = document.getElementById("box1");
+    box1.classList.toggle("display-none");
 }
 
 function desencriptar(){
@@ -84,7 +80,6 @@ function desencriptar(){
 document.getElementById("encriptar").addEventListener("click", encriptar);
 document.getElementById("desencriptar").addEventListener("click", desencriptar);
 document.getElementById("button-copy").addEventListener("click", toggleClass);
-
 
 document.getElementById("text").addEventListener("input",function(e) {
         if(e.data && !e.data.match(/(^[a-z]|\s$)/)){

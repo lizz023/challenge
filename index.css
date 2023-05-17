@@ -57,10 +57,19 @@
     width: 100%;
 }
 
-.caja-text2{
+.caja-toggle1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+    
+.caja-toggle2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 16px;
+    height: 100%;
 }
 
 .card{
@@ -68,7 +77,6 @@
     border-radius: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     padding: 32px;
 }
@@ -130,6 +138,14 @@ main{
     text-align: center;
 }
 
+.parrafo-sec{
+    color: #495057;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
 ::placeholder{
     color: #0A3871;
 }
@@ -166,6 +182,8 @@ main{
     line-height: 150%;
     text-align: center;
 }
+
+
 
 @media screen and (max-width: 992px) {
     .space-1:nth-child(2) {

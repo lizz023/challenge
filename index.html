@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/encriptar.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
@@ -30,17 +31,18 @@
 
             <section class="space-1">
                 <div class="card">
+                    <div class="caja-toggle1" id="box1">
                         <img class="busqueda" src="img/busqueda.png"  id="busqueda"/>
-                        <div class="caja-text2">
-                          <h2  class="titulo-text2" id="titulo-text2">Ningún mensaje fue encontrado</h2>
-                          <p  class="parrafo" id="parrafo">
+                        <h2  class="titulo-text2" id="titulo-text2">Ningún mensaje fue encontrado</h2>
+                        <p class="parrafo-sec">
                             Ingresa el texto que deseas encriptar o desencriptar
-                          </p>
-                          <div class="display-none" id="copy" >
-                            <button class="button-copy" id="button-copy" onclick="copiar()">Copiar</button>
-                          </div>
-                          
-                        </div>
+                        </p>
+                    </div>
+                    
+                    <div class="caja-toggle2 display-none" id="box2">
+                        <p class="parrafo" id="parrafo"></p>
+                        <button class="button-copy" id="button-copy" onclick="copiar()">Copiar</button>
+                    </div>
                 </div>
             </section>
         </main>
