@@ -113,6 +113,19 @@
     margin: 579px 32px;
 }
 
+.footer{
+    background: #F3F5FC;
+    border: ridge;
+    height: 100%;
+    line-height: 50px;
+    max-width: 1440px;
+    text-align: center; 
+}
+
+.icons{
+    width: 50px;
+}
+
 .img-logo{
     width: 120px;
     height: 48px;
